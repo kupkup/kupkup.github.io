@@ -1,0 +1,12 @@
+// ./app.js
+const vm = new Vue({
+    el: '#app',
+    data: {
+        results: []
+    },
+
+    mounted() {
+        axios.get("https://api.coinmarketcap.com/v1/ticker/?convert=CNY&limit=20")
+            .then(response => { this.results = response.data })
+    }
+});
