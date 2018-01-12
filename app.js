@@ -6,7 +6,7 @@ const vm = new Vue({
     },
 
     mounted() {
-        axios.get("https://api.coinmarketcap.com/v1/ticker/?convert=CNY&limit=100")
+        axios.get("https://api.coinmarketcap.com/v1/ticker/?convert=CNY&limit=50")
             .then(response => { this.results = response.data })
     }
 });
