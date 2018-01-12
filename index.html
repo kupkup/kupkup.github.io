@@ -4,11 +4,18 @@
 <head>
     <meta charset="utf-8">
     <title>BTMessage</title>
+
+    <style type="text/css">
+        [v-cloak] {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container" id="app">
-        <h3 class="text-center">CoinMarket</h3>
+
+    <div v-cloak class="container" id="app">
+        <h3 class="text-center">BtMessage</h3>
 
         <div class="columns medium-3" v-for="result in results">
             <div class="card">
